@@ -1,0 +1,79 @@
+// ----------------------------------------------------------------------
+// Body:
+// File Name: _body.less
+// Description: Main Body Styles
+// Used by: Body
+// ----------------------------------------------------------------------
+
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  overflow-x: hidden;
+  line-height: 1.48;
+  background: @white;
+
+  body {
+    color: @black;
+    font-family: "Merriweather", serif;
+    font-size: 1.2rem;
+    line-height: ( ( $base-line-height / $base-font-size ) * 1em );
+
+    @media screen and (max-width: 500px) {
+      font-size: 1rem;
+    }
+
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+p {
+	@include margin (
+		top ( ( $base-line-height / $base-font-size ) * 1em )
+		bottom ( ( ( $base-line-height / $base-font-size ) / 2 ) * 1em )
+	);
+
+	font-size: 1em;
+	line-height: ( ( $base-line-height / $base-font-size ) * 1em );
+}
+
+ul, ol {
+  margin-bottom: 2.5rem;
+  li {
+    line-height: 1.8;
+  }
+}
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,900italic,300italic,300,400italic,700,700italic,900);
+
+main {
+  height: 100vh;
+}
+
+section, header, footer {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .container, .row {
+    flex: 0 1 auto;
+  }
+}

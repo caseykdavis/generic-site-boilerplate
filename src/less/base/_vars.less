@@ -1,0 +1,105 @@
+// ----------------------------------------------------------------------
+// Variables:
+// File Name: _vars.less
+// Description: Global Variables
+// Used by: Globally
+// ----------------------------------------------------------------------
+
+// Variable Rules:
+// 1. Any values commonly throughout the SASS build should be set as a variable (fonts, colors, percentages, z-index)
+// 2. All colors should be variables
+
+// Directories
+// ----------------------------------------------------------------------
+@font-dir: '../../fonts/',
+@img-dir: '../../img/',
+@svg-dir: '../../public/img/svg/',
+@jpg-dir: '../../img/jpg/',
+@png-dir: '../../public/img/png/',
+@gif-dir: '../../img/gif/',
+
+// 1. Colors:
+// ----------------------------------------------------------------------
+
+// a) Base Colors
+@black: #000;
+@white: #fff;
+@gray: #242424;
+
+// b) Brand Specific Colors
+@brand-primary: #c20e24;
+@text-primary: #333;
+@text-inverse: #fff;
+
+// Social Media Colors
+@social-facebook: #3b5998,
+@social-twitter: #1da1f2,
+@social-google-plus: #dd4b39,
+@social-linkedin: #0077b5,
+
+// Fonts & Typography
+// ----------------------------------------------------------------------
+
+// Font weights
+@extralight: 100,
+@light: 200,
+@book: 300,
+@regular: 400,
+@medium: 500,
+@semibold: 600,
+@bold: 700,
+@extrabold: 800,
+@extrablack: 900
+
+// Base Font
+@base-font-family: sans-serif;
+@base-font-weight: @regular;
+@base-font-size: 1.2em;
+@base-font-size-px: @base-font-size * 1px;
+@base-line-height: 1.4;
+
+// Fixed Font
+@fixed-font-family: monospace;
+@fixed-font-size: 85%;
+@fixed-line-height: @base-line-height;
+
+// Headings
+@header-font-weight: @bold;
+
+
+// 2. UI Elements
+// ----------------------------------------------------------------------
+
+  // a) Navigation
+  @nav-bg: #333;
+  @nav-breakpoint: 768px;
+
+  // b) Buttons
+  @button-bg: @brand-primary;
+  @button-outline: @button-bg;
+  @border-radius-default: 4px;
+
+  // c) Jumbotron
+  @jumbotron-text-size: 3em;
+
+  // ----------------------------------------------------------------------
+	// Layout Breakpoints
+// ----------------------------------------------------------------------
+@maxWidth: 1280;
+
+
+// ----------------------------------------------------------------------
+	// Font Sizes
+// ----------------------------------------------------------------------
+@regularSize: 12;
+
+
+// ----------------------------------------------------------------------
+	// Font Families
+// ----------------------------------------------------------------------
+@helvetica: Helvetica, Arial, sans-serif;
+
+// ----------------------------------------------------------------------
+  // Grid
+// ----------------------------------------------------------------------
+@grid-columns: 12;
